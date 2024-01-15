@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poisonous Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://static-00.iconduck.com/assets.00/poison-icon-1678x2048-1swgvvzq.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+ <h1>Choose Your Poison</h1>
+ <img src="https://hellokoqui.com/wp-content/uploads/2022/12/poison-behance-arstation-koqui-studio.gif" height="300px"/>
+ <p >Welcome to Dr. Pryor's and Dr. Lemus's labratory <span id="name"></span>. You have entered at the wrong time! A poisonous flask has dropped on the floor contaminating the entire Lab. Its up to you to find as many Antidote Serums in order to survive. Good Luck!</p>
+ <hr />   
+ <h2>Game Rules</h2>
+ <Ul class="rules">
+    <li>Choose a random square to reveal whats underneath</li>
+    <li>Revealing a skull, ends the game</li>
+    <li>Revealing a Antidote syringe, will extend your life and win the game</li>
+ </Ul>
+ <table id="gameboard">
+    <tr>
+        <td id="1" onclick="poison('1')">?</td>
+        <td id="2" onclick="poison('2')">?</td>
+        <td id="3" onclick="poison('3')">?</td>
+    </tr>
+    <tr>
+        <td id="4" onclick="poison('4')">?</td>
+        <td id="5" onclick="poison('5')">?</td>
+        <td id="6" onclick="poison('6')">?</td>
+    </tr>
+    <tr>
+        <td id="7" onclick="poison('7')">?</td>
+        <td id="8" onclick="poison('8')">?</td>
+        <td id="9" onclick="poison('9')">?</td>
+    </tr>
+ </table>
+ <br />
+ <button onclick="restartbutton()" type="button">Restart Game</button>
+ <footer>
+    <br />
+    <a href="https://youtu.be/dQw4w9WgXcQ?t=1" target="_blank">Ryan & Alan</a>
+ </footer>
+ <script type="text/javascript" src="poison.js"></script>
+</body>
+</html>
